@@ -1,0 +1,241 @@
+@import url("reset.css");
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+body *, body::before, body::after{
+    text-decoration: none;
+    color: #24338D;
+    box-sizing: border-box;
+}
+body {
+    font-size: 13px;
+    font-family: 'NanumSquare', sans-serif;
+    line-height: 1.2;
+}
+
+.header{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid #ccc;
+}
+
+.header-logo{
+    position: absolute;
+    left:10px;
+    top: 15px;
+}
+
+.header-list{
+    align-items: right;
+    display: flex;
+    margin: 20px 0;
+}
+
+.header-list li{
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.header-list a{
+    padding: 0 5px;
+}
+
+.divider{
+    margin: 0 3px;
+}
+
+.main{
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.main-top{
+    padding: 20px 10px;
+    position: relative;
+    background-color: #42d7f5;
+}
+
+.main-top-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    line-height: 1.1em;
+}
+
+.main-top-title em{
+    font-weight: 900;
+}
+.main-top-title::after{
+    content: "";
+    height: 1px;
+    width: 100px;
+    background-color: #24338D;
+    display: block;
+    margin: 30px auto;
+    
+}
+.main-top-description{
+    margin: 30px auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main-top-button {
+    width: 100px;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 1px solid #24338D;
+}
+.main-top-button a{
+    padding: 5px 24px;
+}
+
+.main-top-button:hover{
+    background-color: #24338D;
+    border: 1px solid #fff;
+}
+.main-top-button a:hover{
+    color: #fff;
+}
+
+.main-bottom{
+    display:flex;
+    justify-content: space-between;
+    height: 205px;
+}
+
+.main-bottom-coffee{
+    padding: 0 40px;
+    width: 100%;
+    position: absolute;
+    display:flex;
+    justify-content: space-between;
+    top:50px;
+}
+
+/*strawberry*/
+
+.strawberry{
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    width:328px;
+    height:328px;
+    transform-style: preserve-3d;
+}
+
+.strawberry img{
+    transform: scale(0.85);
+}
+
+.strawberry .face{
+    position: absolute;
+    width:100%;
+    height:100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: 1s ease-in-out;
+}
+
+.strawberry:hover .face.front{
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.strawberry .face.back{
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.strawberry:hover .face.back{
+    transform: perspective(500px) rotateY(360deg);
+}
+
+/*german*/
+.german{
+    position: absolute;
+    right: 50px;
+    top: 30px;
+    width:328px;
+    height:328px;
+    transform-style: preserve-3d;
+}
+
+.german img{
+    transform: scale(0.85);
+}
+
+.german .face{
+    position: absolute;
+    width:100%;
+    height:100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: 1s ease-in-out;
+}
+
+.german:hover .face.front{
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.german .face.back{
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.german:hover .face.back{
+    transform: perspective(500px) rotateY(360deg);
+}
+
+/*이디야 비디오*/
+.ediya-video{
+    background-color: #f5f5f5;
+
+}
+
+.ediya-video iframe{
+    display: block;
+    transform: scale(0.85);
+    margin: 0 auto;
+}
+
+.footer{
+    color: #464646;
+    background-color: #262626;
+    text-align: center;
+}
+
+.footer-util{
+    display:block;
+    padding: 20px;
+    border-bottom: 1px solid #464646;
+}
+
+.footer-util li{
+    display: inline-block;
+    margin: 3px 19px;
+}
+
+.footer-util a{
+    color: #464646;
+}
+
+.footer-logo{
+    margin: 20px;
+}
+
+.footer-info{
+    width: 90%;
+    padding: 20px;
+}
+
+.footer-info span{
+    color: #464646;
+    display: inline-block;
+    margin-right: 10px;
+}
